@@ -1,0 +1,92 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+header,
+footer {
+  background: linear-gradient(90deg, #004aad, #0078ff);
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #ffc107 !important;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 120, 255, 0.8)),
+    url("https://wallpaperswide.com/download/cristiano_ronaldo_fifa_18-wallpaper-2560x1440.jpg")
+      center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Form ---------- */
+form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+button {
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #0059d6 !important;
+}
+
+footer {
+  font-size: 0.95rem;
+  background: linear-gradient(90deg, #004aad, #0078ff);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
